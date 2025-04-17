@@ -12,17 +12,17 @@ const FAQ = () => {
     {
       question: 'What would we discuss during the first call with you?',
       answer:
-        "We'll discuss your project requirements, timeline, and budget to determine how we can best help you achieve your goals.",
+        'We specialize in web products, primarily partnering with US-based tech startups with successfully launched products. These companies typically aim to expand their development teams and tackle new initiatives such as creating product spin-offs, developing complex features, enhancing code maturity, reducing technical debt, and optimizing databases. We also support founders in developing Minimum Viable Products (MVPs).For all our clients, we provide a flexible service that covers product definition, design, and development.',
     },
     {
       question: 'Do you have safe & any particular industry or business type?',
       answer:
-        'We work across various industries but specialize in fintech, healthcare, e-commerce, and enterprise software solutions.',
+        'We specialize in web products, primarily partnering with US-based tech startups with successfully launched products. These companies typically aim to expand their development teams and tackle new initiatives such as creating product spin-offs, developing complex features, enhancing code maturity, reducing technical debt, and optimizing databases. We also support founders in developing Minimum Viable Products (MVPs).For all our clients, we provide a flexible service that covers product definition, design, and development.',
     },
     {
       question: 'Will we work with the same team the entire assignment?',
       answer:
-        'Yes, we maintain dedicated teams throughout the project lifecycle to ensure consistency and deep understanding of your product.',
+        'We specialize in web products, primarily partnering with US-based tech startups with successfully launched products. These companies typically aim to expand their development teams and tackle new initiatives such as creating product spin-offs, developing complex features, enhancing code maturity, reducing technical debt, and optimizing databases. We also support founders in developing Minimum Viable Products (MVPs).For all our clients, we provide a flexible service that covers product definition, design, and development.',
     },
     {
       question: 'How quickly can you start on a new project?',
@@ -45,7 +45,7 @@ const FAQ = () => {
   return (
     <section className="bg-transparent py-20">
       <div className="container mx-auto px-4">
-        <h2 className="mb-4 text-3xl font-bold text-white">
+        <h2 className="mb-4 text-4xl font-medium text-white">
           Questions?{' '}
           <span className="text-blue-500">We&apos;ve got answers</span>
         </h2>
@@ -55,12 +55,12 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border-b border-blue-500/20"
+                className="border-2 border-transparent p-4 transition-all duration-300 ease-in-out data-[state=open]:rounded-lg data-[state=open]:border-blue-500"
               >
-                <AccordionTrigger className="text-left text-lg text-white hover:text-blue-500">
+                <AccordionTrigger className="py-4 text-left text-lg text-white transition-colors duration-300 hover:text-blue-500 hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-400">
+                <AccordionContent className="text-gray-400 transition-all duration-300">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const Testimonials = () => {
   const testimonials = [
     {
@@ -8,7 +10,7 @@ const Testimonials = () => {
       author: 'John Doe',
       title: 'CTO',
       company: 'Tech Corp',
-      image: '/testimonials/john-doe.jpg',
+      image: '/images/undp.webp',
     },
     {
       quote:
@@ -16,7 +18,7 @@ const Testimonials = () => {
       author: 'Jane Smith',
       title: 'Product Manager',
       company: 'Innovation Inc',
-      image: '/testimonials/jane-smith.jpg',
+      image: '/images/uniliver.webp',
     },
     {
       quote:
@@ -24,12 +26,12 @@ const Testimonials = () => {
       author: 'Mike Johnson',
       title: 'CEO',
       company: 'StartupX',
-      image: '/testimonials/mike-johnson.jpg',
+      image: '/images/quilted.webp',
     },
   ];
 
   return (
-    <section className="bg-transparent py-20">
+    <section className="bg-transparent py-20 text-white">
       <div className="container mx-auto px-4">
         <h2 className="mb-16 text-center text-3xl font-bold">
           What Our Clients Say
@@ -38,22 +40,24 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.author}
-              className="rounded-lg bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+              className="bg-secondary/20 flex flex-col gap-5 rounded-lg p-6 text-white shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="mb-4 flex items-center">
-                <img
+              <div className="flex items-center">
+                <Image
+                  width={48}
+                  height={48}
                   src={testimonial.image}
                   alt={testimonial.author}
-                  className="mr-4 h-12 w-12 rounded-full"
+                  className="border-secondary/20 mr-4 h-12 w-12 rounded-full border"
                 />
                 <div>
                   <h3 className="font-semibold">{testimonial.author}</h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm">
                     {testimonial.title} at {testimonial.company}
                   </p>
                 </div>
               </div>
-              <p className="text-gray-600 italic">
+              <p className="leading-7 italic">
                 &quot;{testimonial.quote}&quot;
               </p>
             </div>

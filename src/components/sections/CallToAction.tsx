@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const CallToAction = () => {
   return (
     <section className="bg-transparent py-20">
@@ -17,9 +19,11 @@ const CallToAction = () => {
                   key={i}
                   className="h-12 w-12 overflow-hidden rounded-full border-2 border-blue-500/20"
                 >
-                  <img
-                    src={`/team/member-${i}.jpg`}
+                  <Image
+                    src={`/images/undp.webp`}
                     alt="Team member"
+                    width={48}
+                    height={48}
                     className="h-full w-full object-cover"
                   />
                 </div>

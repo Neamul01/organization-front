@@ -13,32 +13,34 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center space-x-8 md:flex">
-          <Link href="/clients" className="text-white hover:text-gray-900">
-            Clients
-          </Link>
-          <Link href="/services" className="text-white hover:text-gray-900">
-            Services
-          </Link>
-          <Link href="/blog" className="text-white hover:text-gray-900">
-            Blog
-          </Link>
-          <Link href="/about" className="text-white hover:text-gray-900">
-            About Us
-          </Link>
-          <Link href="/careers" className="text-white hover:text-gray-900">
-            Careers
-          </Link>
-          <Link href="/contact" className="text-white hover:text-gray-900">
-            Contact Us
-          </Link>
-        </nav>
+        <div className="flex items-center gap-10">
+          <nav className="hidden items-center space-x-8 md:flex">
+            <Link href="/clients" className="text-white hover:text-gray-900">
+              Clients
+            </Link>
+            <Link href="/services" className="text-white hover:text-gray-900">
+              Services
+            </Link>
+            <Link href="/blog" className="text-white hover:text-gray-900">
+              Blog
+            </Link>
+            <Link href="/about" className="text-white hover:text-gray-900">
+              About Us
+            </Link>
+            <Link href="/careers" className="text-white hover:text-gray-900">
+              Careers
+            </Link>
+            <Link href="/contact" className="text-white hover:text-gray-900">
+              Contact Us
+            </Link>
+          </nav>
 
-        <div className="flex items-center space-x-4">
-          <Button className="hidden md:flex">Let&apos;s talk!</Button>
-          <button className="md:hidden">
-            <Menu className="h-6 w-6" />
-          </button>
+          <div className="flex items-center space-x-4">
+            <Button className="hidden md:flex">Let&apos;s talk!</Button>
+            <button className="md:hidden">
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
         </div>
       </div>
     </header>
