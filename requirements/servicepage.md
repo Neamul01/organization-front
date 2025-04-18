@@ -1,127 +1,262 @@
 # SRS: Services Page – Vinta Software Clone
 
-## Overview
+## Route
 
-This document outlines the requirements for replicating the Services page of Vinta Software. The implementation should utilize Next.js (App Router), TypeScript, Tailwind CSS, and shadcn/ui. Emphasis is placed on creating reusable, role-based components located in the `/src/components/services` directory. The UI and animations must closely match the original site.
+`/services`
 
----
+## Shared Layout
 
-## 1. Page Layout
-
-- **Header**: Consistent with the site's main navigation.
-- **Main Sections**:
-  1. Hero Section
-  2. Nearshoring Benefits
-  3. Service Offerings
-  4. Tech Stack
-  5. Industry Expertise
-- **Footer**: Consistent with the site's footer.
+- Use existing `Header` and `Footer` components from the base layout.
 
 ---
 
-## 2. Components
+## Sections & Components
 
-### 2.1. Header
+### 1. Hero Section – `src/components/services/Hero.tsx`
 
-- **Logo**: Positioned on the left.
-- **Navigation Menu**: Links to Clients, Services, Blog, About Us, Careers, and Contact Us.
-- **Call to Action**: "Let's talk!" button.
+- **Title**:
 
-### 2.2. Hero Section
+- Style: "chillest person" is highlighted in gradient blue.
 
-- **Title**: "Services to make you the chillest person in the office"
-- **Subtitle**: "Flexibility and top-notch professionals to take your product one step further, everyday."
-- **Background**: Image of Vinta's team.
-- **Layout**: Centered text with responsive design.
+- **Subtitle**:  
+  `Flexibility and top-notch professionals to take your product one step further, everyday.`
 
-### 2.3. Nearshoring Benefits
+- **Image**:
+- Right-aligned image of woman with laptop.
+- Rounded corners.
+- Fades in smoothly on scroll.
 
-- **Title**: "Why Vinta is the top choice for nearshoring"
-- **Content**:
-  - Emphasis on speed, reliability, and effective teams.
-  - Highlight shared time zones and customized services.
-- **Layout**: Two-column layout with text and supporting imagery or icons.
-
-### 2.4. Service Offerings
-
-- **Title**: "We'll help you navigate all stages of your business"
-- **Services**:
-  1. **Sketch your Business Idea**
-     - **Description**: De-risk your software budget in 3 weeks with our Product, UX & Engineering experts.
-     - **Icon**: `Pencil` from `lucide-react`
-  2. **Launch your Product**
-     - **Description**: Transform your idea into a reliable product by leveraging modern technology.
-     - **Icon**: `Rocket` from `lucide-react`
-  3. **Grow Your Product**
-     - **Description**: Deliver more features, overcome performance hurdles, and impress stakeholders.
-     - **Icon**: `TrendingUp` from `lucide-react`
-- **Layout**: Three-column grid with icons, titles, descriptions, and "Learn more" links.
-
-### 2.5. Tech Stack
-
-- **Title**: "The tech stack that fuels cutting-edge products"
-- **Categories**:
-  - **Frontend**: React, Next.js
-  - **Backend**: Python, Django, Node.js, Celery, Postgres
-  - **Cloud**: AWS, Azure, Render
-  - **Testing**: Pytest, Jest, Playwright
-  - **Design**: Figma, Adobe CC, Dovetail, Maze
-  - **CI/CD**: Docker, Kubernetes, CircleCI, Azure DevOps, GitHub Actions
-  - **Monitoring**: DataDog, NewRelic, Sentry, Papertrail, Kibana
-- **Layout**: Grid layout with category titles and corresponding icons.
-
-### 2.6. Industry Expertise
-
-- **Title**: "Explore our expertise across multiple industries"
-- **Industries**:
-  1. **Healthtech**
-     - **Case Study**: Rewind - Breaking down EHR migration barriers.
-     - **Description**: Assisted Rewind in migrating from Healthie to Medplum to create a tailored EHR solution.
-     - **Icon**: `HeartPulse` from `lucide-react`
-  2. **AI Agents**
-     - **Case Study**: United Nations - Social protection knowledge base.
-     - **Description**: Developed an AI-powered knowledge base for social protection programs.
-     - **Icon**: `Brain` from `lucide-react`
-  3. **Fintech**
-     - **Case Study**: Tesorio - Cash flow management platform.
-     - **Description**: Enhanced Tesorio's platform for better financial forecasting.
-     - **Icon**: `CreditCard` from `lucide-react`
-- **Layout**: Vertical list or carousel with icons, titles, descriptions, and links to detailed case studies.
-
-### 2.7. Footer
-
-- **Sections**:
-  - Company Overview
-  - Navigation Links: Clients, Services, Blog, About Us, Careers, Contact Us
-  - Social Media Icons: LinkedIn, GitHub, Twitter, Instagram, YouTube
-  - Legal: Privacy Policy and other relevant links
+- **Layout**:
+- Two columns: text on the left, image on the right.
+- Dark gradient background.
+- Vertical and horizontal centering.
 
 ---
 
-## 3. Design & Animations
+### 2. Testimonial + Nearshoring Section – `src/components/services/Nearshoring.tsx`
 
-- **Responsiveness**: Mobile-first design ensuring compatibility across devices.
+- **Left Box**: Testimonial Card
+- Contains:
+  - UNDP logo.
+  - Tags: "Social Tech", "GPT-4".
+  - Quote: _"In just a few meetings to discuss our complex AI product, they had an in-depth understanding of our needs through a multidisciplinary team."_
+  - Name: Ricardo Pravia Jácamo, ICT Associate at United Nations.
+  - Rating: 5 stars.
+- Style: Dark card with white text.
+
+- **Right Box**: Text
+- **Heading**:  
+  `Why Vinta is the top choice for nearshoring`
+- Paragraph describing:
+  - Speed & reliability.
+  - Burden-free onboarding.
+  - Custom services.
+  - Shared time zones.
+- Highlight: "top choice", "speed and reliability", "customized to fit".
+
+- **Layout**:
+- Side-by-side layout.
+- Right section is justified left.
+
+---
+
+### 3. Services Offering Section – `src/components/services/ServiceAccordion.tsx`
+
+- **Title**: Our Services
+- **Subtitle**:
+  `We'll help you navigate all stages of your business`
+- Style: 'of your business' text in gradient blue.
+
+- **Clutch Badge**:
+- Image with rating: 4.9 stars.
+- CTA: "View all reviews"
+
+- **Accordion Items**:
+  Each is a card with dropdown behavior (can use shadcn Accordion):
+
+1. **Sketch your Business Idea**
+
+   - Icon: `Pencil`
+   - Description:  
+     `De-risk your software budget in 3 weeks with our Product, UX & Engineering experts.`
+   - CTA: "Learn more"
+
+2. **Launch your Product**
+
+   - Icon: `Rocket`
+   - Description:  
+     `Transform your idea into a reliable product using modern tech.`
+
+3. **Grow Your Product**
+   - Icon: `TrendingUp`
+   - Description:  
+     `Expertise to help deliver features, overcome hurdles and impress stakeholders.`
+
+- **Layout**:
+- Left-aligned title.
+- Accordion items stacked vertically.
+
+---
+
+### 4. Tech Stack Section – `src/components/services/TechStack.tsx`
+
+- **Title**:  
+  `The tech stack that fuels cutting-edge products`
+
+- **Intro Text**:  
+  `Leverage our expertise in the tech stack you need to develop reliable, scalable, and highly-performative software solutions.`
+
+- **Stack Groups**:
+  Displayed in 3 rows of icons with labels. Use `lucide-react` where possible.
+
+- **Frontend**:
+
+  - React
+  - Next.js
+
+- **Cloud**:
+
+  - AWS
+  - Azure
+  - Render
+
+- **Testing**:
+
+  - Pytest
+  - Jest
+  - Playwright
+
+- **Design**:
+
+  - Figma
+  - Adobe CC
+  - Dovetail
+  - Maze
+
+- **Backend**:
+
+  - Python
+  - Django
+  - Node.js
+  - Celery
+  - Postgres
+
+- **CI/CD**:
+
+  - Docker
+  - Kubernetes
+  - CircleCI
+  - Azure DevOps
+  - GitHub Actions
+
+- **Monitoring**:
+
+  - DataDog
+  - NewRelic
+  - Sentry
+  - Papertrail
+  - Kibana
+
+- **Layout**:
+- Grid view.
+- All groups are equally spaced and aligned under the same container.
+
+---
+
+### 5. Industry Expertise Section – `src/components/services/Industries.tsx`
+
+- **Title**:  
+  `Explore our expertise across multiple industries`
+
+- **Tab Buttons**:
+- Healthtech (active by default)
+- AI Agents
+- Fintech
+- Retail
+- Wellness
+- Edtech
+
+- **Industry Card**:
+- **Logo**: "Rewind"
+- **Category**: Healthtech – Diabetes management
+- **Title**: `Rewind: breaking down EHR migration barriers`
+- **Description**:  
+  How Vinta helped Rewind migrate EHR from Healthie to Medplum and their process.
+- **Image**: Doctor using tablet.
+
+- **CTA**:
+- Bottom link: "Browse case studies →"
+
+- **Layout**:
+- Horizontal button group on top.
+- Card with text left, image right.
+
+---
+
+### 6. CTA Card Section – `src/components/services/CallToAction.tsx`
+
+- **Heading**:
+
+  - Let's start the convo.
+  - Just book a call →
+
+- **Avatar Icons**:
+- 5 team avatars with a fun animation or hover effect.
+
+- **CTA**: "Contact us" link for email.
+
+- **Layout**:
+- Card with black background, white text.
+- Neon glow effect around CTA section.
+- Right side has a placeholder white block.
+
+---
+
+### 7. FAQ Section – `src/components/services/Faq.tsx`
+
+- **Title**:  
+  `Questions? We’ve got answers`
+
+- **FAQ Items** (Accordion style):
+- Why should I work with Vinta instead of hiring for my in-house team?
+- How flexible is the engagement model?
+- How quickly can you start working on my project?
+- What are the terms of your standard contract agreement?
+
+- **Layout**:
+- Vertical accordion list.
+- Highlight first question with slight expansion on load.
+
+---
+
+## Assets
+
+- All icons: Use `lucide-react`
+- Images: Place in `public/assets/services/`
+- Logos: Optimize SVG/PNG before use.
+
+---
+
+## Folder Structure
+
+---
+
+## Animations & Styling
+
 - **Animations**:
-  - Smooth transitions for hover effects.
-  - Scroll-based animations for section reveals.
-  - Interactive elements matching the original site's behavior.
-- **Styling**: Consistent use of Tailwind CSS classes to replicate spacing, typography, and color schemes.
+
+  - Fade-ins on scroll (use Framer Motion or Tailwind + Intersection Observer).
+  - Accordion toggle animations.
+  - Hover effects on buttons & cards.
+
+- **Styling**:
+  - Fully responsive.
+  - Match spacing, font sizes, gradients, and border radius from original site.
 
 ---
 
-## 4. Development Guidelines
+## Dev Guidelines
 
-- **Component Structure**: Each UI element should be a separate, reusable component placed in `/src/components`.
-- **Naming Conventions**: Use clear, descriptive names reflecting the component's role.
-- **Code Quality**:
-  - Implement ESLint with recommended rules for TypeScript and accessibility.
-  - Use Prettier for consistent code formatting.
-  - Configure VSCode settings to auto-format and remove unused imports on save.
-- **shadcn/ui**: Utilize for building accessible and customizable UI components.
-- **Icons**: Import icons from `lucide-react` as React components. For example:
+- Use `yarn`
 
-  ```tsx
-  import { Rocket } from 'lucide-react';
-
-  const LaunchIcon = () => <Rocket size={24} color="currentColor" />;
-  ```
+---
