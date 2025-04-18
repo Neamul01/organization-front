@@ -50,7 +50,12 @@ const FAQ = () => {
           <span className="text-blue-500">We&apos;ve got answers</span>
         </h2>
         <div className="mt-12">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full"
+            defaultValue="item-0"
+          >
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}

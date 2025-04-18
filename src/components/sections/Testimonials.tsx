@@ -31,7 +31,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="bg-transparent py-20 text-white">
+    <section className="bg-transparent py-20">
       <div className="container mx-auto px-4">
         <h2 className="mb-16 text-center text-3xl font-bold">
           What Our Clients Say

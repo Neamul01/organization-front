@@ -33,9 +33,9 @@ const TechStack = () => {
           ))}
         </div>
         <div className="text-center">
-          <a href="#" className="text-base hover:underline">
+          <a href="#" className="text-base">
             Different stack?{' '}
-            <span className="text-primary-100">Let&apos;s discuss →</span>
+            <span className="text-primary">Let&apos;s discuss →</span>
           </a>
         </div>
       </div>
