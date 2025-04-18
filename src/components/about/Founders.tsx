@@ -23,9 +23,10 @@ export default function Founders() {
             <p className="mb-6 text-lg text-gray-600">
               In 2013, our story began in Recife, Brazil, when three developers
               united with a shared vision. We understood that software is more
-              than just code – it's about solving real problems for business
-              leaders. From day one, we've built our company with a focus on
-              creating a human-centered, inclusive, and respected culture.
+              than just code – it&apos;s about solving real problems for
+              business leaders. From day one, we&apos;ve built our company with
+              a focus on creating a human-centered, inclusive, and respected
+              culture.
             </p>
           </div>
         </div>
