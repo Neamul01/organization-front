@@ -4,7 +4,7 @@ import ServiceAccordion from '@/components/services/ServiceAccordion';
 import TechStack from '@/components/services/TechStack';
 import Industries from '@/components/services/Industries';
 import CallToAction from '@/components/services/CallToAction';
-import FAQ from '@/components/services/Faq';
+import FAQ from '@/components/sections/FAQ';
 
 export default function ServicesPage() {
   return (

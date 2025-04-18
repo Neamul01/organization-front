@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#020817] to-[#0f1629] py-20">
+    <section className="relative overflow-hidden bg-transparent py-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="flex flex-col justify-center">
@@ -28,7 +28,7 @@ export default function Hero() {
                 priority
               />
             </div>
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#020817] via-transparent to-transparent opacity-40" />
+            <div className="absolute inset-0 rounded-2xl opacity-40" />
           </div>
         </div>
       </div>

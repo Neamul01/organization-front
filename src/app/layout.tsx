@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <main className="bg-main-gradient min-h-screen bg-[#020817] bg-[length:1440px_auto] bg-fixed bg-[center_36%] font-['Moderat_Thin'] font-thin">
           <Header />
-          {children}
+          <div className="dark-body-bg">{children}</div>
           <div className="fixed right-8 bottom-8 w-72">
             <div className="rounded-lg bg-white/10 p-4 backdrop-blur-sm">
               <p className="text-sm text-gray-300">

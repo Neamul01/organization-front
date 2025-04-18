@@ -10,7 +10,7 @@ export default function CallToAction() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
+        <div className="absolute inset-0 bg-transparent" />
       </div>
 
       <div className="relative">

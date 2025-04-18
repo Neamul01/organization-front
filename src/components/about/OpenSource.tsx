@@ -9,7 +9,7 @@ export default function OpenSource() {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-blue-900 to-blue-950 py-20 text-white">
+    <section className="bg-transparent py-20 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
