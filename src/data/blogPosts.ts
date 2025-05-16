@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Health',
     readTime: '4 min read',
     featured: true,
-    url: '/blog/hipaa-telehealth',
+    url: '/blog/details',
   },
   {
     id: '2',
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Health',
     readTime: '4 min read',
     featured: true,
-    url: '/blog/lab-testing-integration',
+    url: '/blog/details',
   },
   {
     id: '3',
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Medplum',
     readTime: '4 min read',
     featured: true,
-    url: '/blog/awell-medplum-integration',
+    url: '/blog/details',
   },
   // Regular posts
   {
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/fhir-native.png',
     category: 'Health',
     readTime: '4 min read',
-    url: '/blog/fhir-native-applications',
+    url: '/blog/details',
   },
   {
     id: '5',
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/headless-ehr.png',
     category: 'EHR',
     readTime: '4 min read',
-    url: '/blog/headless-ehrs',
+    url: '/blog/details',
   },
   {
     id: '6',
@@ -78,7 +78,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/medplum-design-system.png',
     category: 'Medplum',
     readTime: '4 min read',
-    url: '/blog/medplum-design-system',
+    url: '/blog/details',
   },
   {
     id: '7',
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/clinical-workflows.png',
     category: 'Medplum',
     readTime: '4 min read',
-    url: '/blog/clinical-workflows',
+    url: '/blog/details',
   },
   {
     id: '8',
@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/medplum-chat.png',
     category: 'Medplum',
     readTime: '5 min read',
-    url: '/blog/medplum-chat-app',
+    url: '/blog/details',
   },
   {
     id: '9',
@@ -109,7 +109,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/hipaa-blueprint.png',
     category: 'Health',
     readTime: '5 min read',
-    url: '/blog/hipaa-blueprint',
+    url: '/blog/details',
   },
   {
     id: '10',
@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/medplum-bots.png',
     category: 'Medplum',
     readTime: '2 min read',
-    url: '/blog/medplum-bots',
+    url: '/blog/details',
   },
   {
     id: '11',
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/stop-own-ehr.png',
     category: 'Medplum',
     readTime: '4 min read',
-    url: '/blog/stop-own-ehr',
+    url: '/blog/details',
   },
   {
     id: '12',
@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/fhir-us-core.png',
     category: 'Medplum',
     readTime: '4 min read',
-    url: '/blog/fhir-us-core',
+    url: '/blog/details',
   },
   // Other blog posts (for the dark cards section)
   {
@@ -150,7 +150,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Open Source',
     readTime: '3 min read',
     other: true,
-    url: '/blog/chatless-assistant',
+    url: '/blog/details',
   },
   {
     id: '14',
@@ -160,7 +160,7 @@ export const blogPosts: BlogPost[] = [
     category: 'People',
     readTime: '2 min read',
     other: true,
-    url: '/blog/pygotham-2023',
+    url: '/blog/details',
   },
   {
     id: '15',
@@ -170,6 +170,6 @@ export const blogPosts: BlogPost[] = [
     category: 'API',
     readTime: '2 min read',
     other: true,
-    url: '/blog/url-uri-urn',
+    url: '/blog/details',
   },
 ];
