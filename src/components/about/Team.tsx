@@ -19,7 +19,7 @@ export default function Team() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h2 className="mb-12 text-center text-3xl font-bold sm:text-4xl">
           Empowering Market Needs with a{' '}
           <span className="text-blue-600">Diverse and Expert Team</span>
         </h2>

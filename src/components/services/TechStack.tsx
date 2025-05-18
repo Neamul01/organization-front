@@ -68,7 +68,7 @@ export default function TechStack() {
   return (
     <section className="px-4 py-16 md:px-6 lg:px-8">
       <div className="container mx-auto">
-        <h2 className="from-primary to-secondary mb-4 bg-gradient-to-r bg-clip-text text-center text-4xl font-bold text-transparent">
+        <h2 className="from-primary to-secondary text-primary mb-4 bg-gradient-to-r bg-clip-text text-center text-4xl font-bold">
           Cutting-edge Products
         </h2>
         <p className="text-muted-foreground mx-auto mb-12 max-w-2xl text-center">

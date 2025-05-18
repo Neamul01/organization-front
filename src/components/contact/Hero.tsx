@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="py-16 text-center">
+    <section className="mt-20 py-16 text-center">
       <div className="container mx-auto px-4">
         <h1 className="mb-4 text-4xl font-bold text-blue-600 sm:text-5xl">
           Let&apos;s Talk!

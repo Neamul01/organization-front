@@ -22,7 +22,7 @@ export default function Testimonials() {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
             Exceeding Expectations:{' '}
             <span className="text-blue-600">What Clients Share About Us</span>
           </h2>

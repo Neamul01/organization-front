@@ -17,7 +17,7 @@ export default function Founders() {
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-blue-900/20 via-transparent to-transparent" />
           </div>
           <div className="flex flex-col justify-center">
-            <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold sm:text-4xl">
               Three fellow developers teamed up
             </h2>
             <p className="mb-6 text-lg text-gray-600">

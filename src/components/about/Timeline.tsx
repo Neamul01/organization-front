@@ -20,7 +20,7 @@ export default function Timeline() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h2 className="mb-6 text-3xl font-bold sm:text-4xl">
           10 years of tech excellence:
           <span className="text-blue-600"> A timeline</span>
         </h2>
