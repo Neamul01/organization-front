@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
+import Logo from './Logo';
 
 const Header = () => {
   return (
     <header className="bg-secondary/60 fixed top-7 right-0 left-0 z-50 mx-20 rounded-lg text-white backdrop-blur-lg">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="font-bold text-white">
-          Logo
+        <Link href="/" className="flex items-center">
+          <Logo variant="full" theme="dark" height={42} />
         </Link>
 
         {/* Desktop Navigation */}
