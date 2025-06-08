@@ -6,7 +6,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        "Vinta's team has been instrumental in helping us build and scale our product. Their expertise and dedication are unmatched.",
+        "Intelliduos's team has been instrumental in helping us build and scale our product. Their expertise and dedication are unmatched.",
       author: 'John Doe',
       title: 'CTO',
       company: 'Tech Corp',
@@ -14,7 +14,7 @@ const Testimonials = () => {
     },
     {
       quote:
-        'Working with Vinta has been a game-changer for our business. They understand our needs and deliver exceptional results.',
+        'Working with Intelliduoshas been a game-changer for our business. They understand our needs and deliver exceptional results.',
       author: 'Jane Smith',
       title: 'Product Manager',
       company: 'Innovation Inc',
@@ -22,7 +22,7 @@ const Testimonials = () => {
     },
     {
       quote:
-        'The team at Vinta brings technical excellence and business acumen to every project. They&apos;re true partners in our success.',
+        'The team at Intelliduosbrings technical excellence and business acumen to every project. They&apos;re true partners in our success.',
       author: 'Mike Johnson',
       title: 'CEO',
       company: 'StartupX',

@@ -57,7 +57,7 @@ export default function Nearshoring() {
           </div>
           <div className="flex flex-col justify-center">
             <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
-              Why Vinta is the{' '}
+              Why Intelliduosis the{' '}
               <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 top choice
               </span>{' '}

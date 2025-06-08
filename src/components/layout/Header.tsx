@@ -1,42 +1,39 @@
 'use client';
 
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { navigationItems, ctaButton } from '@/config/navigation';
 import Logo from './Logo';
 
-const Header = () => {
+export default function Header() {
   return (
-    <header className="bg-secondary/60 fixed top-7 right-0 left-0 z-50 mx-20 rounded-lg text-white backdrop-blur-lg">
+    <header className="fixed top-0 right-0 left-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center">
           <Logo variant="full" theme="dark" height={42} />
         </Link>
 
-        {/* Desktop Navigation */}
         <div className="flex items-center gap-10">
           <nav className="hidden items-center space-x-8 md:flex">
-            {/* <Link href="/clients" className="text-white hover:text-gray-900">
-              Clients
-            </Link> */}
-            <Link href="/services" className="text-white hover:text-gray-900">
-              Services
-            </Link>
-            <Link href="/blog" className="text-white hover:text-gray-900">
-              Blog
-            </Link>
-            <Link href="/about-us" className="text-white hover:text-gray-900">
-              About Us
-            </Link>
-            {/* <Link href="/careers" className="text-white hover:text-gray-900">
-              Careers
-            </Link> */}
+            {navigationItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="hover:text-primary text-white"
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           <div className="flex items-center space-x-4">
             <Button className="hidden md:flex">
-              <Link href="/contact" className="text-white hover:text-gray-900">
-                Let&apos;s talk!
+              <Link
+                href={ctaButton.href}
+                className="hover:text-primary text-white"
+              >
+                {ctaButton.label}
               </Link>
             </Button>
             <button className="md:hidden">
@@ -47,6 +44,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

@@ -31,7 +31,7 @@ const FAQ = () => {
     },
     {
       question:
-        'How does Vinta scale my product when I have already made it scale faster?',
+        'How does Intelliduosscale my product when I have already made it scale faster?',
       answer:
         'We analyze your existing infrastructure and implement optimizations to improve performance, scalability, and reliability.',
     },

@@ -5,10 +5,10 @@ export default function Quote() {
         <div className="rounded-2xl bg-gray-900 p-8 shadow-lg">
           <blockquote className="mb-4">
             <p className="text-lg text-gray-300">
-              &ldquo;Vinta exists to find the balance between stakeholders&apos;
-              goals and product constraints through swift learning fail-fast
-              cycles. Our routine embodies and embraces this adaptive
-              ethos.&rdquo;
+              &ldquo;Intelliduosexists to find the balance between
+              stakeholders&apos; goals and product constraints through swift
+              learning fail-fast cycles. Our routine embodies and embraces this
+              adaptive ethos.&rdquo;
             </p>
           </blockquote>
           <div className="flex items-center gap-3">

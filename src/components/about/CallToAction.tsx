@@ -6,7 +6,7 @@ export default function CallToAction() {
       <div className="absolute inset-0">
         <Image
           src="/images/about/team-full.jpg"
-          alt="Vinta team"
+          alt="Intelliduosteam"
           fill
           className="object-cover"
         />

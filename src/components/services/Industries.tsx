@@ -20,7 +20,7 @@ export default function Industries() {
     category: 'Healthtech – Diabetes management',
     title: 'Rewind: breaking down EHR migration barriers',
     description:
-      'How Vinta helped Rewind migrate EHR from Healthie to Medplum and their process.',
+      'How Intelliduoshelped Rewind migrate EHR from Healthie to Medplum and their process.',
     image: '/images/doctor-tablet.svg',
   };
 

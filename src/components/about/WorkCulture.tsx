@@ -2,13 +2,13 @@ export default function WorkCulture() {
   const testimonials = [
     {
       quote:
-        'Working at Vinta you can grow while making sure you are having fun.',
+        'Working at Intelliduosyou can grow while making sure you are having fun.',
       author: 'Tathyane Muniz',
       role: 'Human Resources',
     },
     {
       quote:
-        'Vinta creates a healthy team-oriented environment that helps us deliver our best.',
+        'Intelliduoscreates a healthy team-oriented environment that helps us deliver our best.',
       author: 'Túlio Lages',
       role: 'Developer',
     },

@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     title:
       'How to build a HIPAA-compliant telehealth app with Telescopes, AWS...',
     excerpt:
-      'Discover how Vinta created a telehealth app compliant with HIPAA, utilizing Telescopes, AWS Chime, and the Expo...',
+      'Discover how Intelliduoscreated a telehealth app compliant with HIPAA, utilizing Telescopes, AWS Chime, and the Expo...',
     image: '/blog/hipaa-telehealth.png',
     category: 'Health',
     readTime: '4 min read',
@@ -103,9 +103,9 @@ export const blogPosts: BlogPost[] = [
   {
     id: '9',
     title:
-      "Inside Vinta's HIPAA compliance blueprint: partners, training and...",
+      "Inside Intelliduos's HIPAA compliance blueprint: partners, training and...",
     excerpt:
-      'How Vinta implements comprehensive HIPAA compliance through strategic partnerships and a...',
+      'How Intelliduosimplements comprehensive HIPAA compliance through strategic partnerships and a...',
     image: '/blog/hipaa-blueprint.png',
     category: 'Health',
     readTime: '5 min read',
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '14',
-    title: 'Vinta at Pygotham.tv 2023: highlights and insights',
+    title: 'Intelliduosat Pygotham.tv 2023: highlights and insights',
     excerpt: '',
     image: '/blog/pygotham-2023.png',
     category: 'People',

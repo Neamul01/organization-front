@@ -1,10 +1,7 @@
 import Hero from '@/components/about/Hero';
 import Founders from '@/components/about/Founders';
 import Quote from '@/components/about/Quote';
-import Timeline from '@/components/about/Timeline';
-import OpenSource from '@/components/about/OpenSource';
 import Team from '@/components/about/Team';
-import Testimonials from '@/components/about/Testimonials';
 import WorkCulture from '@/components/about/WorkCulture';
 import CallToAction from '@/components/about/CallToAction';
 
@@ -14,10 +11,10 @@ export default function AboutUsPage() {
       <Hero />
       <Founders />
       <Quote />
-      <Timeline />
-      <OpenSource />
+      {/* <Timeline /> */}
+      {/* <OpenSource /> */}
       <Team />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <WorkCulture />
       <CallToAction />
     </main>

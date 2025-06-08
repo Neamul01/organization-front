@@ -12,7 +12,7 @@ export default function BlogDetailsPage() {
   return (
     <>
       <Head>
-        <title>{post.title} | Vinta Software Blog</title>
+        <title>{post.title} | Intelliduos Blog</title>
         <meta name="description" content={post.excerpt} />
       </Head>
       <Header />
@@ -22,7 +22,7 @@ export default function BlogDetailsPage() {
             {post.title}
           </h1>
           <div className="mb-4 flex items-center gap-2 text-sm text-gray-500">
-            <span>By Vinta Team</span>
+            <span>By IntelliduosTeam</span>
             <span aria-hidden="true">•</span>
             <span>Mar 6, 2023</span>
           </div>

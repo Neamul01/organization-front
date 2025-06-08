@@ -1,5 +1,4 @@
 import Hero from '@/components/services/Hero';
-import Nearshoring from '@/components/services/Nearshoring';
 import ServiceAccordion from '@/components/services/ServiceAccordion';
 import TechStack from '@/components/services/TechStack';
 import Industries from '@/components/services/Industries';
@@ -10,7 +9,7 @@ export default function ServicesPage() {
   return (
     <div className="mx-auto max-w-[1440px] px-4">
       <Hero />
-      <Nearshoring />
+      {/* <Nearshoring /> */}
       <ServiceAccordion />
       <TechStack />
       <Industries />

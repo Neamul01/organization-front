@@ -12,18 +12,18 @@ export default function BlogPage() {
   return (
     <>
       <Head>
-        <title>Blog - Insights and Engineering Articles | Vinta Software</title>
+        <title>Blog - Insights and Engineering Articles | Intelliduos</title>
         <meta
           name="description"
-          content="Explore software engineering insights, healthcare integration tutorials, and Vinta's tech expertise in Python, Django, Medplum, React, and more."
+          content="Explore software engineering insights, healthcare integration tutorials, and Intelliduos's tech expertise in Python, Django, Medplum, React, and more."
         />
         <meta
           property="og:title"
-          content="Blog - Insights and Engineering Articles | Vinta Software"
+          content="Blog - Insights and Engineering Articles | Intelliduos"
         />
         <meta
           property="og:description"
-          content="Explore software engineering insights, healthcare integration tutorials, and Vinta's tech expertise in Python, Django, Medplum, React, and more."
+          content="Explore software engineering insights, healthcare integration tutorials, and Intelliduos's tech expertise in Python, Django, Medplum, React, and more."
         />
         <meta property="og:url" content="https://www.vintasoftware.com/blog" />
         {/* Add og:image and Twitter Card meta as needed */}
