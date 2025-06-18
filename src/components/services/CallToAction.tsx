@@ -40,7 +40,7 @@ export default function CallToAction() {
             </div>
 
             <a
-              href="mailto:contact@example.com"
+              href="/contact"
               className="inline-flex items-center text-lg font-medium text-blue-400 transition hover:text-blue-300"
             >
               Contact us

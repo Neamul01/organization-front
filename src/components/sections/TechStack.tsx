@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { CalendlyDialog } from '@/components/ui/calendly-dialog';
 
 const TechStack = () => {
   const technologies = [
@@ -32,12 +33,14 @@ const TechStack = () => {
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <a href="#" className="text-base">
-            Different stack?{' '}
-            <span className="text-primary">Let&apos;s discuss →</span>
-          </a>
-        </div>
+        <CalendlyDialog
+          triggerText={
+            <p className="cursor-pointer text-base">
+              Different stack?{' '}
+              <span className="text-primary">Let&apos;s discuss →</span>
+            </p>
+          }
+        />
       </div>
     </section>
   );
