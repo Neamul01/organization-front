@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { CalendlyDialog } from '../ui/calendly-dialog';
 
 export default function CallToAction() {
   return (
@@ -24,18 +27,19 @@ export default function CallToAction() {
             </h2>
 
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <a
-                href="#"
-                className="rounded-full bg-blue-600 px-8 py-3 text-white transition hover:bg-blue-700"
-              >
-                Book a free consultation
-              </a>
-              <a
+              <CalendlyDialog
+                triggerText={
+                  <p className="rounded-full bg-blue-600 px-8 py-3 text-white transition hover:bg-blue-700">
+                    Book a free consultation
+                  </p>
+                }
+              />
+              {/* <a
                 href="#"
                 className="rounded-full border border-white px-8 py-3 text-white transition hover:bg-white/10"
               >
                 Explore careers
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

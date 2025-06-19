@@ -9,11 +9,6 @@ const CallToAction = () => {
       <div className="container mx-auto px-4">
         <div className="rounded-xl bg-blue-500/10 p-8">
           <div className="mx-auto max-w-3xl text-center">
-            {/* <h2 className="mb-6 text-3xl font-bold text-white">
-              Let&apos;s start the convo.
-              <br />
-              Just <span className="text-blue-500">book a call</span> →
-            </h2> */}
             <CalendlyDialog
               triggerText={
                 <h2 className="mb-6 cursor-pointer text-3xl font-bold text-white">

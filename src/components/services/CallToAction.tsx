@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { CalendlyDialog } from '../ui/calendly-dialog';
 
 export default function CallToAction() {
   const teamMembers = [
@@ -20,7 +23,14 @@ export default function CallToAction() {
               <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
                 Let&apos;s start the convo.
               </h2>
-              <p className="text-lg text-gray-300">Just book a call →</p>
+              {/* <p className="text-lg text-gray-300">Just book a call →</p> */}
+              <CalendlyDialog
+                triggerText={
+                  <p className="cursor-pointer text-lg text-gray-300">
+                    Just book a call →
+                  </p>
+                }
+              />
             </div>
 
             <div className="mb-8 flex -space-x-4">
