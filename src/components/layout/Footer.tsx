@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Github, Linkedin, Twitter, Instagram, Youtube } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   const navigation = {
@@ -27,7 +28,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="mb-4 text-xl font-bold">Company Name</h3>
+            {/* <h3 className="mb-4 text-xl font-bold">Company Name</h3> */}
+            <Logo variant="full" theme="dark" height={42} />
             <p className="mb-4 text-gray-400">
               Building high-quality software that scales. From idea to launch,
               we&apos;re with you every step of the way.
@@ -83,7 +85,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} Company Name. All rights reserved.
+            &copy; {new Date().getFullYear()} Intelliduos. All rights reserved.
           </p>
         </div>
       </div>
