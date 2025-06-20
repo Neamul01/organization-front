@@ -147,3 +147,7 @@
   background-size: cover;
   padding: 60px 80px 40px;
 }
+
+.shadow-primary {
+  box-shadow: 0 5px 90px 0 var(--primary) !important;
+}
